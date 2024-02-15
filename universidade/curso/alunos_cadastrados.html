@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos Cadastrados</title>
+    <link rel="stylesheet" href="../estilo/estilo.css">
+</head>
+<body>
+<span>Universidade</span>
+<!--htmnl tem elemento aninhado-->
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li><!--Os atributos fornecem informações adicionais sobre os elementos-->
+        <li><a href="sobre/instituicao.html">Sobre</a></li><!--Os atributos geralmente vêm em pares nome/valor como: nome="valor"-->
+        <li><a href="Contato/formulario_contato.html">Contatos</a></li>
+        <!--O 'href' é uma atributo  que especifica o URL da página para a qual o link leva.-->
+        <li><a href="Curso/nossos_cursos.html">Cursos</a></li>
+        <li><a href="pesquisas/pesquisas.html">Pesquisas</a></li>
+    </ul>
+</nav>
+ <h1>Alunos</h1>
+  <table border="1" cellpadding ="10" cellspacing="10" >
+    <!-- atributo cellspacing especifica o espaço entre as células e a borda da tabela-->
+    <!-- O atributo cellpadding especifica o espaço entre a moldura da célula e seu conteúdo-->
+    <thead>
+        <tr>
+            <th colspan="2">Nome</th><!--colspan é utilizado para unir duas ou mais colunas -->
+            <th>Idade</th>
+            <th>Data Nascimento</th>
+            <th >Logradouro</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>           
+            <td>Aluno </td>
+            <td> um</td>
+            <td>23</td>
+            <td>21/12/2000</td>
+            <td rowspan="2">AV Rondonopolis N97</td><!--rowspan é utilizado para unir duas ou mais linhas-->
+        </tr>
+        <tr>
+            <td colspan="4">Mae: Antonia Maria dos Santos</td>
+        </tr>
+        <tr>           
+            <td>Aluno </td>
+            <td> dois</td>
+            <td>23</td>
+            <td>21/12/2000</td>
+            <td rowspan="2">Av; Portugol N 100</td>
+        </tr>
+        <tr>
+            <td colspan="4">Mae: Josefina Carlota </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+</body>
+</html>

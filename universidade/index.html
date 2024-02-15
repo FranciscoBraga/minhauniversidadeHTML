@@ -1,0 +1,153 @@
+<!DOCTYPE html> <!--Indica qual o tipo de documento-->
+<html lang="pt-br"><!-- O elemento raiz html e define todo o documento-->
+<!-- O atributo lang serve para indicar ao  navegador o idioma da página-->
+<head><!--Contém os metadados do documento :cabeçalho-->
+    <meta charset="UTF-8"><!--A sigla "UTF-8" representa um esquema de caracteres 
+        ordenado que abrange uma ampla gama de caracteres e símbolos de diferentes idiomas e escritas. É uma forma de representar caracteres que vai além dos caracteres ASCII básicos e inclui caracteres acentuados, 
+        caracteres de scripts não latinos, símbolos matemáticos, emojis e muito mais-->
+    <!--Defina metadados, como conjunto de caracteres, descrição da página, palavras-chave, etc.-->
+   <meta name="description" content="Descrição da página">
+   <meta name="keywords" content="palavra-chave1, palavra-chave2">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title><!--O elemento <title> é um metadado que representa o título de todo o document HTML-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><!--O elemento <link> é utilizado para vincular conteúdos de outros arquivos na página de código HTML-->
+    <link rel="stylesheet" href="estilo/estilo.css"><!--Esse atributo define o relacionamento entre o arquivo em que o comando está escrito e o arquivo que é definido no caminho do hre-->
+    <!--é o href, que é usado para determinar a localização do arquivo acessado-->
+    <!-- existe três formas para trabalhar com CSS 
+       Inline style - quando o estilo(css) é aplicado diretamente na tag
+       <body style="width :600px;">
+       internal style sheet - quando o estilo(css) é desenvolvido no head da página.
+   <style type="text/css">
+     img{
+        border: 2px solid black;
+     }
+   </style>
+   Exernal style sheet - quando o estilo(css) é desenvolvido num arquivo externo separado da página html.
+   <link rel="stylesheet" href="estilo/estilo.css">   
+  -->
+
+</head>
+
+<body ><!--aqui está parte visivel do html-->
+    <header>
+        <section>
+            <a href="#">Professor</a>
+            <a href="#">Aluno</a>
+        </section>
+        <hr>
+        <section>
+            <span>Universidade</span>
+             <!--htmnl tem elemento aninhado-->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li><!--Os atributos fornecem informações adicionais sobre os elementos-->
+                    <li><a href="sobre/instituicao.html">Sobre</a></li><!--Os atributos geralmente vêm em pares nome/valor como: nome="valor"-->
+                    <li><a href="Contato/formulario_contato.html">Contatos</a></li>
+                    <!--O 'href' é uma atributo  que especifica o URL da página para a qual o link leva.-->
+                    <li><a href="Curso/nossos_cursos.html">Cursos</a></li>
+                </ul>
+            </nav>
+        </section>
+   
+    <hr>
+    <br />
+   
+    <img src="img/cursos/1.jpg" alt="estudantes da universidade" width="900px" height="900px">
+    <!-- width é a largura e o height e a altura.-->
+    <!-- O 'src' é um atributo que especifica o caminho para a imagem a ser exibida.-->
+    <!--O 'alt' especifica um texto alternativo, caso a imagem não poder ser exibida.-->
+    <hr><!--cria uma linha que serve para separa assuntos -->
+    <br /><!--br quebra de linha é um comando apra pular para próxima linha-->
+    <section class="cabecalho_azul">
+        <h1>Estamos Fazendo</h1><!--cabeçalho--  vai de h1 a h6 conforme a prioridade-->
+        <img src="img/cursos/1.jpg" alt="estudantes da universidade" width="330px">
+        <h3>Estudos</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus adipisci ab autem impedit perferendis accusantium, quisquam quo alias nulla nihil mollitia eum excepturi?
+        </p>
+        <ul><!--lista não ordenado-->
+            <li>Anterior</li><!--item da lista -->
+            <li>Próximo</li>
+        </ul>
+    </section>
+    
+    <section id="cabelhaco_diferente">
+        <h3>Nossos Cursos</h3>
+        <img src="img/cursos/1.jpg" alt="estudantes da universidade" width="330px">
+        <p>Técnologia - Técnico de Informática</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus adipisci ab autem impedit perferendis accusantium, quisquam quo alias nulla nihil mollitia eum excepturi?
+        </p>
+    
+        <img src="img/cursos/2.jpg" alt="estudantes da universidade" width="330px">
+        <p>Técnologia - Técnico de Informática</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus adipisci ab autem impedit perferendis accusantium, quisquam quo alias nulla nihil mollitia eum excepturi?
+        </p>
+   
+        <img src="img/cursos/3.jpg" alt="estudantes da universidade" width="330px">
+        <p>Técnologia - Técnico de Informática</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus adipisci ab autem impedit perferendis accusantium, quisquam quo alias nulla nihil mollitia eum excepturi?
+        </p>
+        
+        <img src="img/cursos/4.jpg" alt="estudantes da universidade" width="330px">
+        <p>Técnologia - Técnico de Informática</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus adipisci ab autem impedit perferendis accusantium, quisquam quo alias nulla nihil mollitia eum excepturi?
+        </p>
+        
+        <img src="img/cursos/5.jpg" alt="estudantes da universidade" width="330px">
+        <p>Técnologia - Técnico de Informática</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus adipisci ab autem impedit perferendis accusantium, quisquam quo alias nulla nihil mollitia eum excepturi?
+        </p>
+ 
+        <img src="img/cursos/6.jpg" alt="estudantes da universidade" width="330px">
+        <p>Técnologia - Técnico de Informática</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus adipisci ab autem impedit perferendis accusantium, quisquam quo alias nulla nihil mollitia eum excepturi?
+        </p>
+    
+        <img src="img/sites/mais.png" alt="estudantes da universidade" width="32px">
+   </section>
+   <section>
+      <h3>Cidades que Atuamos</h3>
+      <img src="img/sites/pessoa_feliz.png" alt="" width="300px">
+      <img src="img/caceres.jpg" alt="estudantes da universidade" width="330px">
+        <p>Técnologia - Técnico de Informática</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus adipisci ab autem impedit perferendis accusantium, quisquam quo alias nulla nihil mollitia eum excepturi?
+        </p>
+        <img src="img/chapada.jpg" alt="estudantes da universidade" width="330px">
+        <p>Técnologia - Técnico de Informática</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus adipisci ab autem impedit perferendis accusantium, quisquam quo alias nulla nihil mollitia eum excepturi?
+        </p>
+        <img src="img/cuiabá.jpg" alt="estudantes da universidade" width="330px">
+        <p>Técnologia - Técnico de Informática</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet laborum, optio dolore doloremque officiis voluptatibus adipisci ab autem impedit perferendis accusantium, quisquam quo alias nulla nihil mollitia eum excepturi?
+        </p>
+
+   </section>
+   
+  <!--rodapé-->
+
+  <footer>
+       <a href="admin/login.html"></a>
+      <ul>
+        <li><a href=""><img src="img/redes_sociais/facebook.png" alt="facebook"  width="25px"></a></li>
+        <li><a href=""><img src="img/redes_sociais/instagram.png" alt="instagram"  width="25px"></a></li>
+        <li><a href=""><img src="img/redes_sociais/linkedin_4494498.png" alt="linkedin"  width="25px"></a></li>
+        <li><a href=""><img src="img/redes_sociais/twitter.png" alt="twitter"  width="25px"></a></li>
+        <li><a href=""><img src="img/redes_sociais/whatsapp.png" alt="whatsapp"  width="25px"></a></li>
+        <li><a href=""><img src="img/redes_sociais/youtube.png" alt="youtube"  width="25px"></a></li>
+       </ul>
+
+       <hr>
+      <span>Produzido por Francisco O Braga</span>
+  </footer>
+</body>
+
+</html>

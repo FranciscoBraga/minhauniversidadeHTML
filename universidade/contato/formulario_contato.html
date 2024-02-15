@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="../estilo/estilo.css">
+</head>
+<body>
+    <span>Universidade</span>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="Contato/formulario.html">Contatos</a></li>
+        <li><a href="Curso/tabela.html">Cursos</a></li>
+    </ul>
+   
+    <br />
+    <img src="../img/estudo.jpg" alt="estudantes da universidade" width="900px" height="900px">
+
+<h1>Formulário</h1>
+
+<form action="cadastro.php" method="post"><!--post e get-->
+    <!--O <form>elemento é um contêiner para diferentes tipos de elementos de entrada, 
+    como: campos de texto, caixas de seleção, botões de opção, botões de envio, etc.-->
+<fieldset>
+     <legend>Cadastro de Inscrito</legend>
+    <!--o elemento input cria um campo para coleta de dados -->
+    <!--o atributo type altera a forma que o elemento input é  exibido-->
+    <label for="nome">Digite o seu nome :</label><br/><!-- especifica qual o "rótulo" do input (a que se refere o input, como por exemplo envolvê-la em um texto “Nome completo”) o "for" faz uma ligação entre o a etiqueta e o id do input -->
+    <input type="text" name="nome" id="nome" placeholder="Nome"><!--o atributo type = "text"  é exibido um campo de texto-->
+    <br/>
+    <br/>
+    <label for="idade">Digite a sua idade :</label><br/>
+    <input type="text" name="idade" id="idade" placeholder="Idade">
+    <br/>
+    <br/>
+    <label for="email">Digite seu e-mail:</label><br/>
+     <input type="email" name="email" id="email">
+    <br/>
+    <br/>
+    <label for="senha">Digite sua senha:</label><br/>
+      <input type="password" name="senha" id="senha">
+    <br/>
+    <br/>
+    <label for="genero">Digite o seu  Gênero</label><br/>
+    <input type="radio" name="genero" id="genero" value="masculino">Masculino<!--o atributo type = "radio"  é exibido  botão de opção , Cria um botão de rádio, permitindo que o usuário escolha uma opção de um conjunto.-->
+    <input type="radio" name="genero" id="genero" value="feminino">Feminino
+    <input type="radio" name="genero" id="genero" value="Outros">Outros
+    <br/>
+    <br/>
+    <label for="esporte">Digite quais esportes você pratica: </label><br/>
+    <input type="checkbox" name="esporte" id="esporte" value="Futebol">Futebol<!--As caixas de seleção permitem que você selecione valores exclusivos para envio em um formulário (ou não).-->
+    <input type="checkbox" name="esporte" id="esporte" value="Tênis">Tênis
+    <input type="checkbox" name="esporte" id="esporte" value="Volêi"> Volêi
+    <br/>
+    <input type="checkbox" name="esporte" id="esporte" value="Golf">Golf
+    <input type="checkbox" name="esporte" id="esporte" value="Corrida">Corrida
+    <input type="checkbox" name="esporte" id="esporte" value="Caminhada"> Caminhada
+    <br/>    <br/>
+    <label for="curso">Qual curso você deseja realizar :</label><br/>
+    <select name="curso" id="curso">
+        <option value="Selecione">Selecione um curso</option><!-- representa um controle que apresenta um menu de opções. As opções dentro do menu são representadas pelo elemento <option> , que podem ser agrupados por elementos <optgroup> . As opções podem ser pré-selecionadas para o usuário.-->
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Node">Node</option>
+        <option value="Bootstrap">Bootstrap</option>
+    </select>
+    <br/> <br/> <br/>
+    <label for="texto">Digite seu texto:</label><br/>
+    <textarea name="texto" id="texto" cols="30" rows="10"></textarea><!--útil quando você quer permitir ao usuário informar um texto extenso em formato livre,-->
+    <br/><br/>
+    <input type="hidden" name="valor">
+    <br/><br/>
+    <label for="data_nascimento">Digite a data do seu Nascimento</label>
+    <input type="date" name="data_nascimento" id="data_nascimento">
+     <br/>
+     <br/>
+     <input type="submit" value="enviar">
+    </fieldset>
+</form>
+
+</body>
+</html>

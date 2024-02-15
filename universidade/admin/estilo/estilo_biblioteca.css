@@ -1,0 +1,71 @@
+
+body{
+    background-image: linear-gradient(70deg, #e4fc8e 20%, #E0C3FC 80%);
+    height: 570px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section{
+    height: 78%;
+    margin-top: 70px;
+    box-shadow: 5px 10px 20px #8888 ;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#mensagem {
+    width: 45%;
+    float:left ;
+    font-size: 45px;
+}
+
+#logar{
+    padding: 15px 20px 35px;
+    width: 45%;
+    height: 100%;
+    border-radius: 10px;
+    float: right;
+}
+
+
+#logar img {
+    margin-left: 142px;
+    width: 35%;
+}
+
+#logar input{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    outline: 0;
+}
+
+#logar input[type=submit]{
+    margin-top: 25px;
+    width: 95.5%;
+    background-image: linear-gradient( #e4fc8e , #fffeb9);
+    color:burlywood;
+    border-color: #e4fc8e;
+    padding: 5px;
+    font-size: 35px;
+}
+
+#logar input[type=submit]:hover{
+    box-shadow: 1px 5px 8px burlywood;
+}
+
+#logar form a{
+    margin: 20px 7.5px;
+    padding: 5px;
+    float: right;
+    text-decoration: none;
+    color:black;
+}
+
+#logar form a:hover{
+    color:gray;
+}
