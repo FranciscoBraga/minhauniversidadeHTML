@@ -2,16 +2,30 @@
 <html lang="pt-br"><!-- O elemento raiz html e define todo o documento-->
 <!-- O atributo lang serve para indicar ao  navegador o idioma da página-->
 <head><!--Contém os metadados do documento :cabeçalho-->
+
     <meta charset="UTF-8"><!--A sigla "UTF-8" representa um esquema de caracteres 
         ordenado que abrange uma ampla gama de caracteres e símbolos de diferentes idiomas e escritas. É uma forma de representar caracteres que vai além dos caracteres ASCII básicos e inclui caracteres acentuados, 
         caracteres de scripts não latinos, símbolos matemáticos, emojis e muito mais-->
     <!--Defina metadados, como conjunto de caracteres, descrição da página, palavras-chave, etc.-->
-   <meta name="description" content="Descrição da página">
-   <meta name="keywords" content="palavra-chave1, palavra-chave2">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta name="description" content="Descrição da página"><!--é uma meta tag que fornece uma breve descrição do conteúdo da página da web. Ela é usada pelos mecanismos de busca, como o Google, para exibir um resumo da página nos resultados da pesquisa.-->
+   <!-- descrição deve ser informativo e conciso, com no máximo 160 caracteres.-->
+
+   <meta name="keywords" content="palavra-chave1, palavra-chave2"><!--meta tag que fornece uma lista de palavras-chave relevantes para o conteúdo da página da web. Ela era usada pelos mecanismos de busca, como o Google, para ajudar a indexar e classificar as páginas nos resultados da pesquisa-->
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1"><!--é uma meta tag que fornece instruções aos navegadores web sobre como controlar a área de visualização (viewport)-->
+   <!--Elemento <meta>: Este elemento fornece metadados sobre o documento HTML, 
+    que não são exibidos diretamente ao usuário, mas são usados por navegadores e mecanismos de pesquisa.
+Atributo name="viewport": Especifica que esta meta tag específica está fornecendo instruções relacionadas ao viewport.
+Atributo content="width=device-width, initial-scale=1": Define o comportamento do viewport:
+width=device-width: Define a largura do conteúdo da página para corresponder à largura da tela do dispositivo. Isso garante que o conteúdo seja dimensionado proporcionalmente para se ajustar a diferentes tamanhos de tela.
+initial-scale=1: Define o nível de zoom inicial da página para 100%. Isso evita que o navegador aumente ou diminua o zoom do conteúdo por padrão, proporcionando uma experiência de visualização consistente.--> 
+   
     <title>Página Inicial</title><!--O elemento <title> é um metadado que representa o título de todo o document HTML-->
+    
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><!--O elemento <link> é utilizado para vincular conteúdos de outros arquivos na página de código HTML-->
-    <link rel="stylesheet" href="estilo/estilo.css"><!--Esse atributo define o relacionamento entre o arquivo em que o comando está escrito e o arquivo que é definido no caminho do hre-->
+   
+    <link rel="stylesheet" href="estilo/estilo.css"><!--Esse atributo define o relacionamento entre o arquivo em que o comando está escrito e o arquivo que é definido no caminho do href-->
     <!--é o href, que é usado para determinar a localização do arquivo acessado-->
     <!-- existe três formas para trabalhar com CSS 
        Inline style - quando o estilo(css) é aplicado diretamente na tag
@@ -25,12 +39,29 @@
    Exernal style sheet - quando o estilo(css) é desenvolvido num arquivo externo separado da página html.
    <link rel="stylesheet" href="estilo/estilo.css">   
   -->
+  
+  <script src="script.js"></script><!--Modo Externo Separação de preocupações entre estrutura HTML e lógica JavaScript
+src: Caminho relativo ou absoluto para o arquivo JavaScript.
+type: Define o tipo de conteúdo como "module" para módulos JavaScript ES6.
+async: Permite o carregamento assíncrono do script sem bloquear o renderização da página.
+defer: Carrega o script após a análise do HTML, mas antes da renderização completa da página.-->
+<!--Modo Inline:
+<script>
+// Código JavaScript inline
+</script>-->
 
 </head>
 
 <body ><!--aqui está parte visivel do html-->
     <header>
-        <section>
+        <!--Para definir o cabeçalho principal da página da web.
+Para criar um local para o logotipo do site ou o título principal.
+Para incluir menus de navegação primária para ajudar os usuários a acessarem outras seções do site.
+Para fornecer uma introdução ao conteúdo da página.-->
+      
+     <section><!--Separação semântica: A tag <section> fornece significado semântico ao conteúdo,-->
+        <!--Conteúdo agrupado: Ela permite agrupar elementos HTML relacionados logicamente,-->
+        <!--Título opcional: Embora a tag <section> não exija um título por si só, geralmente é uma boa prática usar um elemento <h1> a <h6> dentro da seção para indicar seu assunto.-->
             <a href="#">Professor</a>
             <a href="#">Aluno</a>
         </section>
@@ -56,8 +87,11 @@
     <!-- width é a largura e o height e a altura.-->
     <!-- O 'src' é um atributo que especifica o caminho para a imagem a ser exibida.-->
     <!--O 'alt' especifica um texto alternativo, caso a imagem não poder ser exibida.-->
+    
     <hr><!--cria uma linha que serve para separa assuntos -->
+    
     <br /><!--br quebra de linha é um comando apra pular para próxima linha-->
+    
     <section class="cabecalho_azul">
         <h1>Estamos Fazendo</h1><!--cabeçalho--  vai de h1 a h6 conforme a prioridade-->
         <img src="img/cursos/1.jpg" alt="estudantes da universidade" width="330px">
